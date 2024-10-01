@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./maincss/style.css">
+    <title>Online Voting System</title>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container ">
+            <a class="navbar-brand" href="#">Online Voting System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inadex.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">New Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="singform.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container text-center mt-4">
+        <img src="Image/vote1.jpg" class="img-container mb-4" alt="Logo">
+    </div>
+
+
+    <!--second page-->
+    <div class="container vh-100 mt-5 p-5 border border-success">
+        <h1 class="hed">Welcome to Online Voting</h1>
+        <p class="text-center">
+            This repository contains the source code for an Online Voting System developed using the MERN stack
+            (MongoDB, Express.js, React.js, Node.js). The system allows users to participate in various types of online
+            voting, such as elections, polls, surveys, and more.
+        </p>
+
+        <div class="row align-items-center">
+            <div class="col-sm-8">
+                <p>
+                    Online voting is a modern way of voting that uses the internet and digital tools to make voting
+                    easier and more accessible. It allows people to vote from their phones or computers, which can
+                    encourage more people, especially younger voters and those who have trouble getting to polling
+                    stations, to take part.
+                    It makes the voting process quicker and reduces the need for polling stations and long lines.
+                    However, online voting also brings up worries about security and privacy, as well as the risk of
+                    hacking.
+                    To make it work safely, strong protections are needed.
+                    While it offers new possibilities, online voting also has important challenges that need to be
+                    carefully addressed.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="img2">
+                    <img src="Image/vote3.avif" class="img-fluid" alt="Voting Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Section -->
+    <div class="container mt-5 container-custom">
+        <h1 class="text-center">Registration</h1>
+        <section>
+            <div class="container mt-5 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>Personal Information</h2>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="firstName">Your First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="lastName">Your Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="age">Your Age</label>
+                                <input type="number" class="form-control" id="age" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="dob">Date of Birth (dd-mm-yyyy)</label>
+                                <input type="text" class="form-control" id="dob" placeholder="dd-mm-yyyy" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="mobileNumber">Mobile Number</label>
+                                <input type="text" class="form-control" id="mobileNumber"
+                                    placeholder="Your mobile number" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="aadharID">Aadhar Card</label>
+                                <input type="text" class="form-control" id="aadharID" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="voterID">Your Voter ID</label>
+                                <input type="text" class="form-control" id="voterID" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Image/vote2.jpg" class="img-fluid" alt="Neha Image">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Right Side: Form -->
+    <section class="mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side: Form -->
+                <div class="col-md-6 right-side d-flex justify-content-center align-items-center">
+                    <form class="login-form w-100">
+                        <h1 class="text-start mb-4">Sign In</h1>
+                        <div class="form-group mb-3 text-start">
+                            <label for="email" class="mail">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group mb-3 text-start">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <div class="form-group form-check mb-3 text-start">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-sm">Log in</button>
+
+                        </div>
+                </div>
+
+                <!-- Right Side: Image -->
+                <div class="col-md-6 Left d-flex justify-content-center align-items-center">
+                    <img src="Image/vote4.jpg" class="img-fluid" alt="Voting Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---section for voting-->
+
+    <div class="container mt-4">
+        <div class="header vh-90 bg-black p-5">
+            <h3> 2024 India General Election</h3><br>
+            <h4> give our vote</h4>
+            <div class="container mt-4">
+                <div class="row bg-info p-3">
+                    <div class="col-3">Candidate Name</div>
+                    <div class="col-3">Party</div>
+                    <div class="col-2">Age</div>
+                    <div class="col-2">Symbol</div>
+                    <div class="col-2">
+                    </div>
+                </div>
+                <div class="row bg-light p-4 text-muted">
+                    <div class="col-3"><img src="Image/narendra.jpg" class=" img" alt="narendra Image">Narendra Modi
+                    </div>
+                    <div class="col-3">Bhartiya Janta Party</div>
+                    <div class="col-2">73</div>
+                    <div class="col-2">No Image</div>
+                    <div class="col-2"><button type="button" class="btn btn-outline-primary btn-sm">vote</button>
+                    </div>
+                </div>
+                <div class="row bg-light p-4 text-muted">
+                    <div class="col-3"><img src="Image/rahul.jpg" class=" img" alt="narendra Image">Rahul Gadhi</div>
+                    <div class="col-3">India National Cogress</div>
+                    <div class="col-2">53</div>
+                    <div class="col-2">No Image</div>
+                    <div class="col-2"><button type="button" class="btn btn-outline-primary btn-sm">vote</button>
+                    </div>
+                </div>
+                <div class="row bg-light p-4 text-muted">
+                    <div class="col-3"><img src="Image/kejari.jpg" class=" img" alt="narendra Image">Arvind Kejriwal
+                    </div>
+                    <div class="col-3">Aam Admi Party</div>
+                    <div class="col-2">55</div>
+                    <div class="col-2">No Image</div>
+                    <div class="col-2"><button type="button" class="btn btn-outline-primary btn-sm">vote</button>
+                    </div>
+                </div>
+                <div class="row bg-light p-4  text-muted">
+                    <div class="col-3"><img src="Image/mayawati.webp" class=" img" alt="narendra Image">Mayawati</div>
+                    <div class="col-3">Bahujan Samaj Party</div>
+                    <div class="col-2">55</div>
+                    <div class="col-2">No Image</div>
+                    <div class="col-2"><button type="button" class="btn btn-outline-primary btn-sm">vote</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </section>
+
+</body>
+
+</html>
